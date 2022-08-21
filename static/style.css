@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+
+body {
+    height: 100vh;
+    font-family: 'DynaPuff', cursive;
+}
+
+.logo {
+    background-image: url("images/background.jpg");
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo figure {
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.logo figure img{
+    width: 100%;
+}
+
+.tarjeta {
+    margin-top: 1.5rem;
+    border: 2px solid #BF9270;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.tarjeta h2 {
+    background-color: #BF9270;
+    padding: 1rem;
+}
+
+.tarjeta__cuerpo {
+    padding: 1rem;
+}
+
+.bi{
+    color: #BF9270;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    color: #000000;
+}
+
+.btn, .envio {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: .8rem 0;
+    text-align: center;
+    border: 2px solid #BF9270;
+}
+
+.envio {
+    background-color: #BF9270;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #BF9270;
+}
+
+.btn:hover i, .btn:focus i {
+    color: #fff;
+}
+
+
+@media screen and (min-width: 320px) {
+    .main {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .logo figure {
+        width: 42%;
+    }
+
+    .tarjeta h2{
+        font-size: 1.4rem;
+    }
+
+    .btn, .envio, .tarjeta {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    .btn-escritorio {
+        display: none;
+    }
+
+    .iconos {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 2px solid #BF9270;
+        border-radius: 10px;
+    }
+    .iconos a {
+        margin: .9rem;
+        background-color: #fff;
+    }
+
+    .iconos i {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 554px) {
+    .logo figure {
+        width: 29%;
+    }
+    .btn-escritorio {
+        display: block;
+    }
+    .iconos {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .logo figure {
+        width: 10%;
+    }
+
+    .tarjeta h2{
+        font-size: 1.5rem;
+    }
+    .btn, .envio{
+        width: 70%;
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+    .tarjeta {
+        width: 70%;
+        font-size: 1rem;
+
+    }
+    .iconos {
+        display: none;
+    }
+}
